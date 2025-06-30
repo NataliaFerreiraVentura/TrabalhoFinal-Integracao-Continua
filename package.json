@@ -1,0 +1,25 @@
+{
+  "name": "trabalhofinal-integracao-continua",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha testes/trabalho-final.js --reporter mochawesome --reporter-options reportDir=relatorios,reportFilename=relatorio-trabalho-final,quiet=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NataliaFerreiraVentura/TrabalhoFinal-Integracao-Continua.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NataliaFerreiraVentura/TrabalhoFinal-Integracao-Continua/issues"
+  },
+  "homepage": "https://github.com/NataliaFerreiraVentura/TrabalhoFinal-Integracao-Continua#readme",
+  "devDependencies": {
+    "mocha": "^11.7.1",
+    "mochawesome": "^7.1.3"
+  }
+}

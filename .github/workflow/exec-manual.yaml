@@ -1,0 +1,33 @@
+name: 'Execução Manual'
+
+on: 
+  workflow_dispatch: 
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonando repositório do projeto
+        uses: actions/checkout@v4
+
+      - name: Instalando Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+
+      - name: Instalando Yarn
+        run: npm install -g yarn
+
+      - name: Instalando dependências
+        run: yarn install
+
+      - name: Execução dos testes unitários 
+        run: yarn test
+
+      - name: Upload do relatório para o GitHub
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+           name: relatorio-mocha
+           path: ./relatorios
