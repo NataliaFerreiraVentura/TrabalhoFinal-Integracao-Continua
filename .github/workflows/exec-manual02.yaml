@@ -1,0 +1,30 @@
+name: 'Execução Manual com Mocha'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*' # ou '22.x', conforme seu projeto
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Executar testes com Mocha
+        run: npm test
+
+      - name: Upload do relatório Mochawesome (se houver)
+        uses: actions/upload-artifact@v4
+        if: success() # só envia se passar
+        with:
+          name: relatorio-mocha
+          path: relatorios/ # ou onde o mochawesome gera os arquivos
