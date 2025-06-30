@@ -5,8 +5,8 @@
     "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2025-06-30T01:24:46.581Z",
-    "end": "2025-06-30T01:24:47.600Z",
+    "start": "2025-06-30T01:48:41.839Z",
+    "end": "2025-06-30T01:48:42.858Z",
     "duration": 1019,
     "testsRegistered": 5,
     "passPercent": 100,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a0e51949-aa2e-4df3-98f5-3764bb715029",
+      "uuid": "2dd94b82-5627-4e80-b8db-d4b9947f13d6",
       "title": "",
       "fullFile": "C:\\Users\\natyv\\Documents\\ESTUDOS_AUTOMACAO_QA\\POS-GRADUAÇÃO\\TRABALHOFINALCI\\TrabalhoFinal-Integracao-Continua\\testes\\trabalho-final.js",
       "file": "\\testes\\trabalho-final.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ecfce6e2-4451-46ef-a207-86c8fdd6240c",
+          "uuid": "b1eb54fb-9086-44d2-a0c2-c572b01f147f",
           "title": "Testes da disciplina - fundamentos JS",
           "fullFile": "C:\\Users\\natyv\\Documents\\ESTUDOS_AUTOMACAO_QA\\POS-GRADUAÇÃO\\TRABALHOFINALCI\\TrabalhoFinal-Integracao-Continua\\testes\\trabalho-final.js",
           "file": "\\testes\\trabalho-final.js",
@@ -47,8 +47,8 @@
               "context": null,
               "code": "assert.strictEqual(geradorDeTagsDeIdentificacao('Pantera'), 'PANTERA');",
               "err": {},
-              "uuid": "c86c53a3-b988-4594-85bf-3bd6e6cd7c8e",
-              "parentUUID": "ecfce6e2-4451-46ef-a207-86c8fdd6240c",
+              "uuid": "7e4174eb-1f4c-43e0-86ab-6357bea8ed3f",
+              "parentUUID": "b1eb54fb-9086-44d2-a0c2-c572b01f147f",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "assert.strictEqual(verificarSePodeSerAdotado(1, 'M'), true)",
               "err": {},
-              "uuid": "ea1aa6c6-1db9-4e5f-9a5d-1120e6faa68d",
-              "parentUUID": "ecfce6e2-4451-46ef-a207-86c8fdd6240c",
+              "uuid": "2d6fe870-b1f3-4d48-a7a2-2444e4ee52a4",
+              "parentUUID": "b1eb54fb-9086-44d2-a0c2-c572b01f147f",
               "isHook": false,
               "skipped": false
             },
@@ -83,8 +83,8 @@
               "context": null,
               "code": "assert.strictEqual(calcularConsumoDeRacao('Pitoco', 1, 14.5), 4350)",
               "err": {},
-              "uuid": "fb76382b-38dc-4069-a1f2-7adf08fce585",
-              "parentUUID": "ecfce6e2-4451-46ef-a207-86c8fdd6240c",
+              "uuid": "8f2130b7-dd8f-4806-9241-810d760df2b4",
+              "parentUUID": "b1eb54fb-9086-44d2-a0c2-c572b01f147f",
               "isHook": false,
               "skipped": false
             },
@@ -101,8 +101,8 @@
               "context": null,
               "code": "assert.strictEqual(decidirTipoDeAtividadePorPorte('pequeno'), 'brincar dentro de casa')",
               "err": {},
-              "uuid": "1b8ff39d-2c12-4147-a98c-6d8ddf402497",
-              "parentUUID": "ecfce6e2-4451-46ef-a207-86c8fdd6240c",
+              "uuid": "7a6fa6ce-0e44-46a0-afa4-5da838c4c504",
+              "parentUUID": "b1eb54fb-9086-44d2-a0c2-c572b01f147f",
               "isHook": false,
               "skipped": false
             },
@@ -110,7 +110,7 @@
               "title": "QUANDO buscar dado de exemplo, DEVE retornar um valor de forma assíncrona",
               "fullTitle": "Testes da disciplina - fundamentos JS QUANDO buscar dado de exemplo, DEVE retornar um valor de forma assíncrona",
               "timedOut": false,
-              "duration": 1007,
+              "duration": 1009,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -119,24 +119,24 @@
               "context": null,
               "code": "const resultado = await buscarDadoAsync();\nassert.strictEqual(resultado, 'Pipoca');",
               "err": {},
-              "uuid": "0fd548db-0e65-4de1-8535-4c34754739a8",
-              "parentUUID": "ecfce6e2-4451-46ef-a207-86c8fdd6240c",
+              "uuid": "d28a6f75-e312-4b67-bd36-c19fda05e353",
+              "parentUUID": "b1eb54fb-9086-44d2-a0c2-c572b01f147f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c86c53a3-b988-4594-85bf-3bd6e6cd7c8e",
-            "ea1aa6c6-1db9-4e5f-9a5d-1120e6faa68d",
-            "fb76382b-38dc-4069-a1f2-7adf08fce585",
-            "1b8ff39d-2c12-4147-a98c-6d8ddf402497",
-            "0fd548db-0e65-4de1-8535-4c34754739a8"
+            "7e4174eb-1f4c-43e0-86ab-6357bea8ed3f",
+            "2d6fe870-b1f3-4d48-a7a2-2444e4ee52a4",
+            "8f2130b7-dd8f-4806-9241-810d760df2b4",
+            "7a6fa6ce-0e44-46a0-afa4-5da838c4c504",
+            "d28a6f75-e312-4b67-bd36-c19fda05e353"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1007,
+          "duration": 1009,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
