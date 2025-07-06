@@ -11,11 +11,6 @@ jobs:
       - name: Clonando repositório do projeto
         uses: actions/checkout@v4
 
-      - name: Instalando Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 'latest'
-
       - name: Instalando Yarn
         run: npm install -g yarn
 
